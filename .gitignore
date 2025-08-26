@@ -1,0 +1,25 @@
+# === Unity 基本 ===
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+MemoryCaptures/
+*.stacktrace
+
+# === IDE/ビルド生成物 ===
+*.csproj
+*.sln
+*.suo
+*.user
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# 重要: .meta は必ず追跡するので無視しない！
