@@ -23,3 +23,10 @@ MemoryCaptures/
 *.VC.db
 
 # 重要: .meta は必ず追跡するので無視しない！
+
+# --- Visual Studio cache ---
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
