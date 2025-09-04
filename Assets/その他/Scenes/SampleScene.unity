@@ -292,6 +292,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragRigidbody3D
   cam: {fileID: 0}
+  anchorHeight: 1
+  rayMaxDistance: 200
   spring: 100
   damper: 5
   maxDistance: 0.2
@@ -795,6 +797,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragRigidbody3D
   cam: {fileID: 0}
+  anchorHeight: 1
+  rayMaxDistance: 200
   spring: 100
   damper: 5
   maxDistance: 0.2
@@ -859,10 +863,10 @@ PrefabInstance:
       addedObject: {fileID: 1101341550}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7cbb75c5fa380534e9cf6a3ed53fe640, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1101341549}
+      addedObject: {fileID: 1101341554}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7cbb75c5fa380534e9cf6a3ed53fe640, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1101341554}
+      addedObject: {fileID: 1101341558}
   m_SourcePrefab: {fileID: 100100000, guid: 7cbb75c5fa380534e9cf6a3ed53fe640, type: 3}
 --- !u!1 &595989505
 GameObject:
@@ -965,22 +969,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7cbb75c5fa380534e9cf6a3ed53fe640, type: 3}
   m_PrefabInstance: {fileID: 587410253}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1101341549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1101341548}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 587e9bd84e6390648a0e03dcdb1d3c3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DragRigidbody3D
-  cam: {fileID: 330585545}
-  spring: 100
-  damper: 5
-  maxDistance: 0.2
 --- !u!54 &1101341550
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1029,6 +1017,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.4, y: 1.4, z: 1.4}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1101341558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101341548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 587e9bd84e6390648a0e03dcdb1d3c3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HoldDice
+  cam: {fileID: 0}
+  anchorHeight: 5
+  rayMaxDistance: 200
+  spring: 300
+  damper: 30
+  maxDistance: 0.05
 --- !u!1 &1209017569 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: af9e8100e85a82e4dabbf5cff134af99, type: 3}
@@ -1229,6 +1235,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragRigidbody3D
   cam: {fileID: 0}
+  anchorHeight: 1
+  rayMaxDistance: 200
   spring: 100
   damper: 5
   maxDistance: 0.2
